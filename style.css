@@ -1,0 +1,358 @@
+/* -----------------------------------
+   RESET & GLOBAL STYLE
+----------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f9fbff;
+    color: #1e1e1e;
+}
+
+/* -----------------------------------
+   NAVBAR
+----------------------------------- */
+.navbar {
+    width: 100%;
+    padding: 10px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: fadeDown 0.8s ease;
+}
+
+.logo-img {
+    width: 110px;
+    height: auto;
+}
+
+.navbar nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+    color: #00a9ff;
+}
+
+/* -----------------------------------
+   HERO SECTION
+----------------------------------- */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 6%;
+    animation: fadeUp 0.8s ease;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #0b2b4c;
+    letter-spacing: -0.5px;
+}
+
+.hero p {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    color: #5a6c7d;
+}
+
+.cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #00a9ff 0%, #0088cc 100%);
+    padding: 13px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 169, 255, 0.3);
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 169, 255, 0.4);
+}
+
+/* -----------------------------------
+   FEATURES SECTION
+----------------------------------- */
+.features {
+    padding: 50px 6% 60px;
+    text-align: center;
+    background: #fafcff;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 36px;
+    color: #0b2b4c;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    background: white;
+    padding: 22px 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 169, 255, 0.1);
+}
+
+.feature-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 169, 255, 0.15);
+    border-color: rgba(0, 169, 255, 0.3);
+}
+
+/* -----------------------------------
+   PAGE HEADER (SERVICES, PORTFOLIO, CONTACT)
+----------------------------------- */
+.page-header {
+    padding: 50px 6% 30px;
+    animation: fadeUp 0.8s ease;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #0b2b4c;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.page-header p {
+    font-size: 16px;
+    color: #5a6c7d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* -----------------------------------
+   SERVICES PAGE
+----------------------------------- */
+.services-page {
+    padding: 30px 6% 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: white;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    border-left: 4px solid #00a9ff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.service-item:hover {
+    transform: translateX(4px);
+    background: #f0f9ff;
+    box-shadow: 0 4px 12px rgba(0, 169, 255, 0.12);
+}
+
+/* -----------------------------------
+   PORTFOLIO
+----------------------------------- */
+.portfolio-grid {
+    padding: 20px 6% 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.portfolio-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 169, 255, 0.18);
+    border-color: rgba(0, 169, 255, 0.2);
+}
+
+.portfolio-box h3 {
+    font-size: 18px;
+    color: #0b2b4c;
+    margin-bottom: 8px;
+}
+
+.portfolio-box p {
+    font-size: 14px;
+    color: #5a6c7d;
+    line-height: 1.5;
+}
+
+.p-img {
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(135deg, #e0f4ff 0%, #cfefff 100%);
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+/* -----------------------------------
+   CONTACT PAGE
+----------------------------------- */
+.contact-box {
+    padding: 20px 6% 60px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.wa-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #00a9ff 0%, #0088cc 100%);
+    color: white;
+    text-align: center;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 169, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.wa-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 169, 255, 0.4);
+}
+
+.email-form {
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.email-form input,
+.email-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1px solid #d0e0ec;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.email-form input:focus,
+.email-form textarea:focus {
+    outline: none;
+    border-color: #00a9ff;
+    box-shadow: 0 0 0 3px rgba(0, 169, 255, 0.1);
+}
+
+.email-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.email-form button {
+    background: linear-gradient(135deg, #00a9ff 0%, #0088cc 100%);
+    color: white;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 169, 255, 0.3);
+}
+
+.email-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 169, 255, 0.4);
+}
+
+/* -----------------------------------
+   FOOTER
+----------------------------------- */
+footer {
+    text-align: center;
+    padding: 24px;
+    background: #ffffff;
+    margin-top: 50px;
+    border-top: 1px solid #e8eef3;
+    font-size: 14px;
+    color: #5a6c7d;
+}
+
+/* -----------------------------------
+   ANIMATIONS
+----------------------------------- */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
